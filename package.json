@@ -5,9 +5,9 @@
   "scripts": {
     "build": "vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "dev": "vite",
+    "dev": "cross-env DEBUG=0 vite",
     "format": "prettier --write src/",
-    "preview": "vite preview"
+    "preview": "vite build && vite preview"
   },
   "dependencies": {
     "autoprefixer": "^10",
