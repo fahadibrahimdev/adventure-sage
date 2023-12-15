@@ -1,12 +1,13 @@
 {
   "name": "adventure-sage",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "build": "vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "dev": "cross-env DEBUG=0 vite",
+    "dev": "vite",
     "format": "prettier --write src/",
-    "preview": "vite build && vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "autoprefixer": "^10",
